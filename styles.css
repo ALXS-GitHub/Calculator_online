@@ -1,0 +1,139 @@
+* {
+    text-decoration: none;
+    list-style:none;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    overflow-x:hidden; /* pour retirer la scrollbar horizontale (pour ne pas voir le menu masqué)*/
+}
+
+/* @ partie calculatrice */
+
+.calculator {
+    width: 400px;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.466);
+    margin:auto;
+    border-radius: 20px;
+}
+
+.screen {
+    width: 100%;
+    height: 100px;
+    background-color: #0000004e;
+    border-radius:20px 20px 0 0;
+    position: relative;
+}
+
+
+.buttons {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    width: 25%; /*pour que les boutons prennent toute la largeur*/
+    height:widht;
+    background-color: rgba(255, 255, 255, 0.317);
+    border: 1px solid black;
+}
+
+.button > p {
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+    font-size: 40px;
+}
+
+.zero, .equal {
+    width: 50%;
+    height: calc(width - 2px);
+}
+
+.zero > p, .equal > p {
+    margin-top: 3%;
+}
+
+.cancel {
+    background-color: rgba(255, 0, 0, 0.475);
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.cancel:hover {
+    background-color: red;
+}
+
+.screendisplay {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: -30px;
+}
+
+/* @ partie MENU */
+
+
+
+.menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* background-color:red; */
+    color: white;
+}
+
+.menu ul {
+    margin-top:20%;
+    padding:0;
+    width: 100%;
+    height: 60%;
+    /* background-color: green; */
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.menu-bar {
+    margin:auto;
+    align-items: left;
+    background-color:white;
+    height: 5px;
+    width: 35px;
+    border-radius: 4px;
+}
+
+
+
+.menu-display.active-menu {
+    position: absolute;
+    right:0;
+    top: 10%;
+}
+
+.menu-display.not-active-menu {
+    position: absolute;
+    top: 10%;
+    right:-100px;
+}
+
+
+.menu-item {
+    color: white;
+    font-size:30px;
+    margin: 30px 10px;
+    text-align: right;
+}
+
+/* TODO */
+/* $ transition menu */

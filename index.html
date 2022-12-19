@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALXS Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li class="menu-bar"></li>
+                <li class="menu-bar"></li>
+                <li class="menu-bar"></li>
+            </ul>
+        </div>
+        <div class="menu-display not-active-menu">
+            <ul>
+                <li class="menu-item">Calc</li>
+                <li class="menu-item">Info</li>
+                <li class="menu-item">About</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class='calculator'>
+            <div class='screen'>
+                <!-- <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div> -->
+                <p id="screendisplay" class="screendisplay"></p>
+            </div>
+
+            <div class='buttons'>
+                <button id='b1' data-number class='button'>
+                    <!--data pour les classes utilisées dans le fichier js-->
+                    <p>1</p>
+                </button>
+                <button id='b2' data-number class='button'>
+                    <p>2</p>
+                </button>
+                <button id='b3' data-number class='button'>
+                    <p>3</p>
+                </button>
+                <button id='b+' data-operation class='button'>
+                    <p>+</p>
+                </button>
+                <button id='b4' data-number class='button'>
+                    <p>4</p>
+                </button>
+                <button id='b5' data-number class='button'>
+                    <p>5</p>
+                </button>
+                <button id='b6' data-number class='button'>
+                    <p>6</p>
+                </button>
+                <button id='b-' data-operation class='button'>
+                    <p>-</p>
+                </button>
+                <button id='b7' data-number class='button'>
+                    <p>7</p>
+                </button>
+                <button id='b8' data-number class='button'>
+                    <p>8</p>
+                </button>
+                <button id='b9' data-number class='button'>
+                    <p>9</p>
+                </button>
+                <button id='b*' data-operation class='button'>
+                    <p>*</p>
+                </button>
+                <button id='b.' data-number class='button'>
+                    <p>.</p>
+                </button>
+                <button id='b0' data-number class='button zero'>
+                    <p>0</p>
+                </button>
+                <button id='b/' data-operation class='button'>
+                    <p>/</p>
+                </button>
+                <button id='bAC' data-all-clear class='button cancel'>
+                    <p>AC</p>
+                </button>
+                <button id='bDEL' data-delete class='button'>
+                    <p>DEL</p>
+                </button>
+                <button id='b=' data-operation class='button equal'>
+                    <p>=</p>
+                </button>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
